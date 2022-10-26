@@ -1,0 +1,101 @@
+.header
+    padding w(27) w(60)
+    position fixed
+    top 0
+    width 100%
+    height w(95)
+    background-color #181818
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+
+    &__content
+        display flex
+        flex-direction row
+        align-items center
+
+    &__logo
+        display flex
+        flex-direction row
+
+    &__otd
+        padding-left w(100)
+        display flex
+        flex-direction row
+
+        &:first-child
+            padding-left w(60)
+
+    &__image
+        width w(50)
+
+        img
+            width 100%
+
+    &__number
+        font-family 'Roboto'
+        font-style normal
+        font-weight 700
+        font-size 14px
+        line-height 20px
+        letter-spacing 0.02em
+        color #E0E0E0
+
+    &__text
+        width w(165)
+        padding-left w(20)
+        font-family 'Roboto'
+        font-style normal
+        font-weight 400
+        font-size 14px
+        line-height 18px
+        letter-spacing 0.02em
+        color #E0E0E0
+
+        &:first-child
+            width w(120)
+            font-weight 600
+
+
+    &__adress
+        padding-left w(100)
+        width w(330)
+        font-family 'Roboto'
+        font-style normal
+        font-weight 400
+        font-size 14px
+        line-height 18px
+        letter-spacing 0.04em
+        color #F2F2F2
+
+    &__links
+        display flex
+        flex-direction row
+        justify-content flex-end
+
+    &__info
+        font-family 'Roboto'
+        font-style normal
+        font-weight 500
+        font-size 14px
+        line-height 20px
+        letter-spacing 0.04em
+        color #F2F2F2
+
+        &:hover
+            color #FFB100
+
+            &::after
+                content ''
+                display block
+                position relative
+                top w(17)
+                height w(3)
+                background-color #FFB100
+
+        &:last-child
+            margin-left w(20)
+
+
+    

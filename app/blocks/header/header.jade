@@ -1,0 +1,18 @@
+mixin header()
+
+    +b('section').header
+        +e.content
+            +e.logo
+                +e.image
+                    img(src='/images/logo.svg')
+                +e('p').text Объединенная металлоломная компания
+            +e.otd
+                +e('p').number 8 905 171-77-82
+                +e('p').text Отдел заготовки лома цветных металлов
+            +e.otd
+                +e('p').number 8 905 171-32-44
+                +e('p').text Отдел заготовки лома черных металлов
+            +e('p').adress 308012 г. Белгород, ул. Костюкова 46 "Б" офис 313
+        +e.links
+            +e('p').info О компании
+            +e('p').info Контакты
