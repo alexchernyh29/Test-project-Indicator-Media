@@ -1,0 +1,21 @@
+mixin slider()
+
+    +b('section')(id="slider").slider
+        +e.list
+            +e.item
+                +e.image
+                    img(src='/images/slider_slide-1.png')
+            +e.item
+                +e.image
+                    img(src='/images/slider_slide-1.png')
+            +e.item
+                +e.image
+                    img(src='/images/slider_slide-1.png')
+        +e.slider 
+            +e.swap
+                +e.left
+                    img(src='/images/next.svg')
+            +e.swap
+                +e.rigth
+                    img(src='/images/next.svg')
+        

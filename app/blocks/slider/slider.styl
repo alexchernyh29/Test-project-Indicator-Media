@@ -1,0 +1,53 @@
+.slider
+
+    &__list
+        position relative
+        display flex
+        flex-flow row nowrap
+    
+    &__item
+        position relative
+        width 100%
+        width 380px
+        height 635px
+        margin-right 30px
+        flex-shrink 0
+        padding 35px 30px
+        background $c-white_2
+
+    &__image
+        width 341px
+        z-index 10
+
+        img
+            width 100%
+
+    .slick
+        position relative
+        height 1200px
+
+    .slick-slide
+        width 380px
+        height 100%
+        margin 100px 20px 0 0
+
+    .slick-arrow
+        position absolute
+        top -80px
+        font-size 0
+        border 3px solid $c-orange_1
+        z-index 10
+        width 60px
+        height 60px
+
+    .slick-prev
+        right 80px
+        background url('../../images/slider-prev.png') no-repeat center
+        +below(375px)
+            right 275px
+
+    .slick-next
+        right 0
+        background url('../../images/slider-next.png') no-repeat center
+        +below(375px)
+            right 195px

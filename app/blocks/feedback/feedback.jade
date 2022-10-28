@@ -1,0 +1,17 @@
+mixin feedback()
+
+    +b('section').feedback
+        .container
+            +e.wrap 
+                +e.title Форма обратной связи
+                +e.wrap-1
+                    +e('input')(placeholder="Ваше имя").input
+                    +e('input')(placeholder="Телефон").input
+                +e.treatment
+                    +e('input')(type="checkbox").checkbox
+                    +e.text Согласен(а) с обработкой персональных данных
+                +e('button').button Обратиться к нам
+            +e.arrow_prev 
+                img(src='/images/feedback_prev.png')
+            +e.image 
+                img(src='/images/feedback_bg.png')
