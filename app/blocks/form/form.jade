@@ -1,0 +1,15 @@
+mixin form()
+
+    +b('section').form
+        +e.image
+            img(src='/images/form_bg.png')
+            +e.wrap 
+                +e.title Форма обратной связи
+                +e.wrap-1
+                    +e('input')(placeholder="Ваше имя").input
+                    +e('input')(placeholder="Телефон").input
+                +e.treatment
+                    +e('input')(type="checkbox").checkbox
+                    +e.text Согласен(а) с обработкой персональных данных
+                +e('button').button Обратиться к нам
+            +e.closeModal        

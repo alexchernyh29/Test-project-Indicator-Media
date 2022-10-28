@@ -1,6 +1,22 @@
-import svg4everybody from 'svg4everybody';
-import $ from 'jquery';
+import $ from "jquery";
+import slick from "slick-carousel";
 
 $(() => {
-	svg4everybody();
+	$(".certificates-slider__list").slick({
+		infinite: true,
+		centerMode: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
 });

@@ -1,8 +1,21 @@
 extends /blocks/layout-default/layout-default
 include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/company/company
+include /blocks/form/form
+include /blocks/contact/contact
+include /blocks/feedback/feedback
+include /blocks/slider/slider
+include /blocks/certificates-slider/certificates-slider
 
 block head
 	- var pageTitle = 'Project Template';
 
 block content
 	+header()
+	//- +feedback()
+	+certificates-slider()
+	//- +contact()
+	//- +form()
+	//- +company()
+	+footer()
